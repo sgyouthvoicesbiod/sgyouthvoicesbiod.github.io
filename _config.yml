@@ -1,0 +1,22 @@
+# Setup
+title:            SYVB
+tagline:          'sgyouthvoicesbiod'
+description:      'We are a nature group run by youths, for youths.'
+url:              http://sgyouthvoicesbiod.github.io
+
+author:
+  name:           'sgyouthvoicesbiod'
+  url:            https://instagram.com/sgyouthvoicesbiod
+
+plugins_dir: jekyll-paginate
+paginate:         5
+
+# Dependencies
+markdown:         kramdown
+highlighter:      pygments
+
+# Custom vars
+version:          2.1.0
+
+github:
+  repo:           https://github.com/sgyouthvoicesbiod/sgyouthvoicesbiod.github.io#
