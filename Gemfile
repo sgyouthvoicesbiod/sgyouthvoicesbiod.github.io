@@ -13,6 +13,8 @@ group :jekyll_plugins do
   gem "webrick", "~> 1.9"
   gem "faraday-retry"
   gem "jekyll-remote-theme"
+  gem "open_uri_redirections"
+  gem "safe_yaml"
 end
 
 # Performance-booster for watching directories on Windows
