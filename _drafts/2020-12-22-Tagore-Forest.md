@@ -7,7 +7,7 @@ series_title: "Disappearing Habitats"
 
 ## Tagore Forest
 
-Sandwiched between 
+Sandwiched between the Central Catchment Nature Reserve and the forests of Sungei Seletar, Tagore is a massive forest patch of immense biodiversity value.
 
 <!-- Series links -->
 {% if page.is_series == true %}
