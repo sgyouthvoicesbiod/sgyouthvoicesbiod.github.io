@@ -1,36 +1,14 @@
 ---
 layout: post
 title: Feedback for Bukit Batok Hillside Park Development Project
-date: 2020-07-01 15:23:18.000000000 +08:00
-type: post
-parent_id: '0'
-published: true
-password: ''
-status: publish
-categories: []
-tags: []
-meta:
-  timeline_notification: '1593613400'
-  _publicize_job_id: '46070964664'
-author:
-  login: syvb
-  email: sgyouthvoicesbiod@gmail.com
-  display_name: SYVB
-  first_name: Singapore Youth Voices for Biodiversity
-  last_name: ''
-permalink: "/2020/07/01/feedback-for-bukit-batok-hillside-project/"
 ---
-<p><!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd"><br />
-<!-- wp:paragraph --><html><body></p>
-<p>Dear Friends of Nature, on 6 June 2020, an environmental impact assessment (EIA) report was published regarding the planned development work at the Bukit Batok Hillside Park area. Although the forest and stream site may not be very big, we believe that it still has conservation value and may have bigger implications on conservation in Singapore. Do check out the infographic below to find out more</p>
-<p><!-- /wp:paragraph --></p>
-<p><!-- wp:paragraph --></p>
-<p>We also believe that it is important for your feedback regarding this planned development to be heard. As such, do fill up the feedback form (link below) for us to better understand the concerns that you may have. Do note that the feedback form closes on 11 July 2020 (direct responses to HDB on this development closes on 16 July, link in the feedback form).</p>
-<p><!-- /wp:paragraph --></p>
-<p><!-- wp:paragraph --></p>
-<p>We recommend that you read through the report and the <a href="https://sgyouthvoicesbiod.wordpress.com/resources/">infographic</a> before delivering your feedback.</p>
-<p><!-- /wp:paragraph --></p>
-<p><!-- wp:paragraph --></p>
+
+Dear Friends of Nature, on 6 June 2020, an environmental impact assessment (EIA) report was published regarding the planned development work at the Bukit Batok Hillside Park area. Although the forest and stream site may not be very big, we believe that it still has conservation value and may have bigger implications on conservation in Singapore. Do check out the infographic below to find out more</p>
+
+We also believe that it is important for your feedback regarding this planned development to be heard. As such, do fill up the feedback form (link below) for us to better understand the concerns that you may have. Do note that the feedback form closes on 11 July 2020 (direct responses to HDB on this development closes on 16 July, link in the feedback form).
+
+We recommend that you read through the report and the <a href="https://sgyouthvoicesbiod.wordpress.com/resources/">infographic</a> before delivering your feedback.</p>
+
 <p>Feedback form: <a href="https://forms.gle/RK3RkFPU4ewanxUH8?fbclid=IwAR1YLBcKxdQFdeIddOthqKjfeI0WJ9nUB5ms-jcHDRZW74y-2vWGD9W-MVs" target="_blank" rel="noreferrer noopener">https://forms.gle/RK3RkFPU4ewanxUH8</a></p>
 <p><!-- /wp:paragraph --></p>
 <p><!-- wp:paragraph --></p>

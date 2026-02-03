@@ -1,24 +1,6 @@
 ---
 layout: post
 title: SYVB mentioned in Parliament
-date: 2020-06-19 15:41:38.000000000 +08:00
-type: post
-parent_id: '0'
-published: true
-password: ''
-status: publish
-categories: []
-tags: []
-meta:
-  _publicize_job_id: '45629476412'
-  timeline_notification: '1592577703'
-author:
-  login: syvb
-  email: sgyouthvoicesbiod@gmail.com
-  display_name: SYVB
-  first_name: Singapore Youth Voices for Biodiversity
-  last_name: ''
-permalink: "/2020/06/19/syvb-mentioned-in-parliament/"
 ---
 <p><!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd"><br />
 <!-- wp:paragraph --><html><body></p>

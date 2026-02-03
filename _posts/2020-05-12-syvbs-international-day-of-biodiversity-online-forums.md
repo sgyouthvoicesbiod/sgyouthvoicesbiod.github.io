@@ -1,29 +1,6 @@
 ---
 layout: post
 title: SYVB's International Day of Biodiversity Online Forums!
-date: 2020-05-12 20:11:00.000000000 +08:00
-type: post
-parent_id: '0'
-published: true
-password: ''
-status: publish
-categories: []
-tags:
-- biodiversity
-- environment
-- online
-- youth
-meta:
-  timeline_notification: '1589372066'
-  _publicize_job_id: '44186874935'
-  _wp_old_date: '2020-05-13'
-author:
-  login: syvb
-  email: sgyouthvoicesbiod@gmail.com
-  display_name: SYVB
-  first_name: Singapore Youth Voices for Biodiversity
-  last_name: ''
-permalink: "/2020/05/12/syvbs-international-day-of-biodiversity-online-forums/"
 ---
 <p><!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd"><br />
 <!-- wp:paragraph --><html><body></p>

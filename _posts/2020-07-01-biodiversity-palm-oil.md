@@ -1,24 +1,6 @@
 ---
 layout: post
-title: Biodiversity &amp; Palm Oil
-date: 2020-07-01 15:15:45.000000000 +08:00
-type: post
-parent_id: '0'
-published: true
-password: ''
-status: publish
-categories: []
-tags: []
-meta:
-  _publicize_job_id: '46070712300'
-  timeline_notification: '1593612948'
-author:
-  login: syvb
-  email: sgyouthvoicesbiod@gmail.com
-  display_name: SYVB
-  first_name: Singapore Youth Voices for Biodiversity
-  last_name: ''
-permalink: "/2020/07/01/biodiversity-palm-oil/"
+title: Biodiversity & Palm Oil
 ---
 <p><!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd"><br />
 <!-- wp:paragraph --><html><body></p>

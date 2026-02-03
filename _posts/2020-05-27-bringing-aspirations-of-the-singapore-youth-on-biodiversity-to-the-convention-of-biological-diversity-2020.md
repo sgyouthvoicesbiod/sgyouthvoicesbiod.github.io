@@ -2,24 +2,6 @@
 layout: post
 title: Bringing "Aspirations of the Singapore Youth on Biodiversity" to the Convention
   of Biological Diversity 2020
-date: 2020-05-27 04:47:45.000000000 +08:00
-type: post
-parent_id: '0'
-published: true
-password: ''
-status: publish
-categories: []
-tags: []
-meta:
-  _publicize_job_id: '44739885578'
-  timeline_notification: '1590551269'
-author:
-  login: syvb
-  email: sgyouthvoicesbiod@gmail.com
-  display_name: SYVB
-  first_name: Singapore Youth Voices for Biodiversity
-  last_name: ''
-permalink: "/2020/05/27/bringing-aspirations-of-the-singapore-youth-on-biodiversity-to-the-convention-of-biological-diversity-2020/"
 ---
 <p><!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd"><br />
 <!-- wp:paragraph --><html><body></p>

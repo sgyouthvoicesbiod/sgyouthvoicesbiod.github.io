@@ -1,24 +1,6 @@
 ---
 layout: post
 title: Upcoming Event - What's Next for Our Biodiversity?
-date: 2020-02-18 16:29:53.000000000 +08:00
-type: post
-parent_id: '0'
-published: true
-password: ''
-status: publish
-categories: []
-tags: []
-meta:
-  timeline_notification: '1582043396'
-  _publicize_job_id: '40839173208'
-author:
-  login: syvb
-  email: sgyouthvoicesbiod@gmail.com
-  display_name: SYVB
-  first_name: Singapore Youth Voices for Biodiversity
-  last_name: ''
-permalink: "/2020/02/18/upcoming-event-whats-next-for-our-biodiversity/"
 ---
 <p><!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd"><br />
 <!-- wp:paragraph --><html><body></p>

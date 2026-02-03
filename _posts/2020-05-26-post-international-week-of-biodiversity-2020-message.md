@@ -1,24 +1,6 @@
 ---
 layout: post
 title: Post International Week of Biodiversity 2020 Message
-date: 2020-05-26 14:12:06.000000000 +08:00
-type: post
-parent_id: '0'
-published: true
-password: ''
-status: publish
-categories: []
-tags: []
-meta:
-  timeline_notification: '1590498729'
-  _publicize_job_id: '44713725689'
-author:
-  login: syvb
-  email: sgyouthvoicesbiod@gmail.com
-  display_name: SYVB
-  first_name: Singapore Youth Voices for Biodiversity
-  last_name: ''
-permalink: "/2020/05/26/post-international-week-of-biodiversity-2020-message/"
 ---
 <p><!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd"><br />
 <!-- wp:paragraph --><html><body></p>
