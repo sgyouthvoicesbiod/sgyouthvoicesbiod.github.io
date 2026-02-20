@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: About Us
 ---
 
 ![profile photo](/images/about/GroupPhotoSYVB.jpg){: .limited-height}
