@@ -1,22 +1,55 @@
-# Setup
-title:            SYVB
-tagline:          'sgyouthvoicesbiod'
-description:      'We are a nature group run by youths, for youths.'
+# Site Settings
+title:            Singapore Youth Voices for Biodiversity
+tagline:          'Run by Youths, for Youths'
+description:      'Run by youths, for youths.'
 url:              http://sgyouthvoicesbiod.github.io
+baseurl:          ""
 
-author:
-  name:           'sgyouthvoicesbiod'
-  url:            https://instagram.com/sgyouthvoicesbiod
 
-plugins_dir: jekyll-paginate
+# Theme Settings
+# Background
+cover_image:      /images/background-image.jpeg
+cover_bg_color:   rgb(40, 73, 77)
+cover_color:      rgb(255, 255, 255)
+
+# 'theme' is for local gems. 'remote_theme' is for GitHub-hosted themes.
+remote_theme:     " vszhub/not-pure-poole" # <-- CHANGE THIS to the theme you want
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-gist
+  - jekyll-remote-theme
+
+# Pagination
 paginate:         5
 
 # Dependencies
 markdown:         kramdown
-highlighter:      pygments
+highlighter:      rouge    # Pygments is largely deprecated; Rouge is the Jekyll 4 standard
 
 # Custom vars
 version:          2.1.0
 
 github:
-  repo:           https://github.com/sgyouthvoicesbiod/sgyouthvoicesbiod.github.io#
+  repo:           https://github.com/sgyouthvoicesbiod/sgyouthvoicesbiod.github.io
+  username:       sgyouthvoicesbiod
+
+sass:
+  sass_dir:       _sass
+  style:          :compressed
+
+# Options
+
+# Replace this value and uncomment to enable Google Analytics tracking
+# google_analytics: UA-000000-0
+
+# Replace this value and uncomment to enable Disqus
+# disqus: xxxxxx
+
+# Specify the author for blog posts
+author:
+  name: Singapore Youth Voices for Biodiversity
+  url: https://github.com/sgyouthvoicesbiod/
+  email: sgyouthvoicesbiod@gmail.com
