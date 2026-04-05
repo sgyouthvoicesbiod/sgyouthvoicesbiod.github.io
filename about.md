@@ -3,49 +3,48 @@ layout: page
 title: About Us
 ---
 
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/204258437@N02/55111940598/in/dateposted-public/" title="GroupPhotoSYVB"><img src="https://live.staticflickr.com/65535/55111940598_7d651d9422.jpg" width="500" height="281" alt="GroupPhotoSYVB"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>{: style="float: left"}{: .img-left}
-
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/204258437@N02/55111940598" title="GroupPhotoSYVB"><img src="https://live.staticflickr.com/65535/55111940598_7d651d9422_b.jpg" width="1024" height="576" alt="GroupPhotoSYVB"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 We are the Singapore Youth Voices for Biodiversity. We are run by youths, for youths.
 
-## Our Mission
+# Our Mission
 We aim to raise awareness about Singapore's biodiversity, while carrying out conservation through making changes in our national biodiversity policies.
 
-## Our Team
+# Our Team
 
 We have a Core Team, and also our broader SYVB Community.
 
-### Our Core Team
+## Our Core Team
 
-<strong>Nasry</strong>
+### Nasry
 
+Nasry is an undergraduate in NTU, studying the Environmental Earth System Sciences. He is the executive director of SYVB, and leads the team.
 
+### Isaac
 
-<strong>Isaac</strong>
+Isaac is an undergraduate in NUS, studying Life Sciences.
 
+### Jayden
 
+Jayden is a graduate of the Republic Polytechnic's Diploma of Environmental and Marine Science. He has experience volunteering in both Peninsular Malaysia and Singapore. As the Head of Outreach, Jayden coordinates the booths, guided walks, and workshops that SYVB does.
 
-<strong>Jayden</strong>
+### Kean Seng
 
+Kean Seng is an undergraduate in NTU, studying the Environmental Earth System Sciences.
 
-
-<strong>Kean Seng</strong>
-
-
-
-<strong>Kymberly</strong>
-
-
-
-<strong>Ryan</strong>
+### Kymberly
 
 
 
-<strong>Hui Ling</strong>
+### Ryan
+
+Ryan is an undergraduate in NTU, studying the Environmental Earth System Sciences.
+
+### Hui Ling
 
 
 
-<strong>Hannah</strong>
+### Hannah
 
 
 
-<strong>Zheng Hao</strong>
+### Zheng Hao
