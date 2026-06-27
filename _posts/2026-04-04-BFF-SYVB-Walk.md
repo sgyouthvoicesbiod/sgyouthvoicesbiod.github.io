@@ -41,5 +41,4 @@ Along the Golf Link, a SYVB member found a Geosesarma Crab! Most species of this
 <a data-flickr-embed="true" href="https://www.flickr.com/photos/204258437@N02/55188788200/in/dateposted-public/" title="BFF26_CCNR_VioletBlueDamselfly"><img src="https://live.staticflickr.com/65535/55188788200_ec937fcc76_m.jpg" width="240" height="160" alt="BFF26_CCNR_VioletBlueDamselfly"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 
 Right above the Geosesarma sat a Violet Sprite.
-
 We hoped the participants had fun today! It was a long and hot hike, but we made it!
