@@ -3,48 +3,104 @@ layout: page
 title: About Us
 ---
 
-<a data-flickr-embed="true" href="https://www.flickr.com/photos/204258437@N02/55111940598" title="GroupPhotoSYVB"><img src="https://live.staticflickr.com/65535/55111940598_7d651d9422_b.jpg" width="1024" height="576" alt="GroupPhotoSYVB"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+![GroupPhotoSYVB](https://live.staticflickr.com/65535/55111940598_7d651d9422_c.jpg)
+
 We are the Singapore Youth Voices for Biodiversity. We are run by youths, for youths.
 
-# Our Mission
+### Our Mission
+
 We aim to raise awareness about Singapore's biodiversity, while carrying out conservation through making changes in our national biodiversity policies.
 
-# Our Team
+# Meet Our Core Team
 
-We have a Core Team, and also our broader SYVB Community.
+{% assign sorted_people = site.people | sort: "order" %}
 
-## Our Core Team
+<div class="people-grid">
+  {% for person in sorted_people %}
+  <a href="{{ person.url }}" style="text-decoration: none; color: inherit;">
+  <div class="person-card">
+    {% if person.coverimg %}
+    <div class="person-cover">
+      <img src="{{ person.coverimg }}" alt="{{ person.title }}" loading="lazy">
+    </div>
+    {% endif %}
+    
+    <div class="person-content">
+      <h3 class="person-title">{{ person.title }}</h3>
+      <p class="person-role">{{ person.role }}</p>
+      
+      {% if person.content %}
+      <p class="person-bio">
+        {{ person.content | strip_html | truncatewords: 20 }}
+      </p>
+      {% endif %}
+    </div>
+  </div>
+  </a>
+  {% endfor %}
+</div>
 
-### Nasry
+<style>
+.people-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
 
-Nasry is an undergraduate in NTU, studying the Environmental Earth System Sciences. He is the executive director of SYVB, and leads the team.
+@media (min-width: 768px) {
+  .people-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
-### Isaac
+.person-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-Isaac is an undergraduate in NUS, studying Life Sciences.
+.person-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
 
-### Jayden
+.person-cover {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  background-color: #f0f0f0;
+}
 
-Jayden is a graduate of the Republic Polytechnic's Diploma of Environmental and Marine Science. He has experience volunteering in both Peninsular Malaysia and Singapore. As the Head of Outreach, Jayden coordinates the booths, guided walks, and workshops that SYVB does.
+.person-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
-### Kean Seng
+.person-content {
+  padding: 1.5rem;
+}
 
-Kean Seng is an undergraduate in NTU, studying the Environmental Earth System Sciences.
+.person-title {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
 
-### Kymberly
+.person-role {
+  margin: 0 0 1rem 0;
+  color: #666;
+  font-style: italic;
+  font-size: 0.95rem;
+}
 
-
-
-### Ryan
-
-Ryan is an undergraduate in NTU, studying the Environmental Earth System Sciences.
-
-### Hui Ling
-
-
-
-### Hannah
-
-
-
-### Zheng Hao
+.person-bio {
+  margin: 0;
+  color: #555;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+</style>
