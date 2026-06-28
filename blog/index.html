@@ -66,6 +66,7 @@ pagination:
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   background: white;
+  align-items: stretch;
 }
 
 .blog-card:hover {
@@ -82,7 +83,8 @@ pagination:
 
 .blog-card-image {
   width: 100%;
-  height: 250px;
+  height: 100%;
+  min-height: 250px;
   overflow: hidden;
   background-color: #f0f0f0;
 }
@@ -119,5 +121,30 @@ pagination:
   color: #555;
   line-height: 1.6;
   font-size: 0.95rem;
+}
+
+/* Alternate layout for even cards */
+.blog-cards > a:nth-child(even) .blog-card {
+  grid-template-columns: 2fr 1fr;
+}
+
+.blog-cards > a:nth-child(even) .blog-card-image {
+  order: 2;
+}
+
+.blog-cards > a:nth-child(even) .blog-card-content {
+  order: 1;
+}
+
+.blog-cards > a:nth-child(even) .blog-card-title {
+  text-align: right;
+}
+
+.blog-cards > a:nth-child(even) .blog-card-date {
+  text-align: right;
+}
+
+.blog-cards > a:nth-child(even) .blog-card-content {
+  text-align: right;
 }
 </style>
