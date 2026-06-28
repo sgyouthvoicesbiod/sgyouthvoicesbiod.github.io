@@ -17,19 +17,25 @@ layout: null
       padding: 0;
       box-sizing: border-box;
     }
-
+ 
     html, body {
       height: 100%;
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
       background-color: #f5f5f5;
     }
-
+ 
+    @media (prefers-color-scheme: dark) {
+      html, body {
+        background-color: #1a1a1a;
+      }
+    }
+ 
     body {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
     }
-
+ 
     .homepage-hero {
       background: 
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.0)),
@@ -46,57 +52,57 @@ layout: null
       justify-content: center;
       align-items: center;
     }
-
+ 
     @media (min-width: 640px) {
       .homepage-hero {
         padding: 3rem 2rem;
       }
     }
-
+ 
     @media (min-width: 1024px) {
       .homepage-hero {
         padding: 4rem 2rem;
       }
     }
-
+ 
     .hero-content h1 {
       font-size: 1.75rem;
       margin-bottom: 0.5rem;
       font-weight: 700;
     }
-
+ 
     @media (min-width: 640px) {
       .hero-content h1 {
         font-size: 2.25rem;
       }
     }
-
+ 
     @media (min-width: 1024px) {
       .hero-content h1 {
         font-size: 2.5rem;
       }
     }
-
+ 
     .hero-content p {
       font-size: 1rem;
       opacity: 0.95;
       margin-bottom: 2rem;
     }
-
+ 
     @media (min-width: 640px) {
       .hero-content p {
         font-size: 1.15rem;
         margin-bottom: 2.5rem;
       }
     }
-
+ 
     @media (min-width: 1024px) {
       .hero-content p {
         font-size: 1.25rem;
         margin-bottom: 3rem;
       }
     }
-
+ 
     .cards-container {
       display: grid;
       grid-template-columns: 1fr;
@@ -105,7 +111,7 @@ layout: null
       width: 100%;
       padding: 0 1rem;
     }
-
+ 
     @media (min-width: 640px) {
       .cards-container {
         grid-template-columns: repeat(2, 1fr);
@@ -113,7 +119,7 @@ layout: null
         padding: 0 1.5rem;
       }
     }
-
+ 
     @media (min-width: 1024px) {
       .cards-container {
         grid-template-columns: repeat(3, 1fr);
@@ -121,7 +127,7 @@ layout: null
         padding: 0 2rem;
       }
     }
-
+ 
     .card {
       background: white;
       border-radius: 8px;
@@ -133,50 +139,76 @@ layout: null
       color: inherit;
       cursor: pointer;
     }
-
+ 
+    @media (prefers-color-scheme: dark) {
+      .card {
+        background: #2a2a2a;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+      }
+    }
+ 
     @media (min-width: 640px) {
       .card {
         padding: 1.75rem;
       }
     }
-
+ 
     @media (min-width: 1024px) {
       .card {
         padding: 2rem;
       }
     }
-
+ 
     .card:hover {
       transform: translateY(-8px);
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
       background: #fafafa;
     }
-
+ 
+    @media (prefers-color-scheme: dark) {
+      .card:hover {
+        background: #333;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+      }
+    }
+ 
     .card h2 {
       font-size: 1.25rem;
       color: rgb(40, 73, 77);
       margin-bottom: 1rem;
       font-weight: 600;
     }
-
+ 
+    @media (prefers-color-scheme: dark) {
+      .card h2 {
+        color: #64b5d6;
+      }
+    }
+ 
     @media (min-width: 1024px) {
       .card h2 {
         font-size: 1.5rem;
       }
     }
-
+ 
     .card p {
       color: #666;
       line-height: 1.6;
       font-size: 0.9rem;
     }
-
+ 
+    @media (prefers-color-scheme: dark) {
+      .card p {
+        color: #b0b0b0;
+      }
+    }
+ 
     @media (min-width: 1024px) {
       .card p {
         font-size: 0.95rem;
       }
     }
-
+ 
     footer {
       background: #2c2c2c;
       color: white;
@@ -184,23 +216,24 @@ layout: null
       padding: 1.5rem 1rem;
       font-size: 0.85rem;
     }
-
+ 
     @media (min-width: 640px) {
       footer {
         padding: 2rem;
         font-size: 0.9rem;
       }
     }
-
+ 
     footer a {
       color: #4b9ec6;
       text-decoration: none;
     }
-
+ 
     footer a:hover {
       text-decoration: underline;
     }
   </style>
+
 </head>
 <body>
   <div class="homepage-hero">

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: About Us
 permalink: /about/
 ---
@@ -8,9 +8,11 @@ permalink: /about/
 
 We are the Singapore Youth Voices for Biodiversity. We are run by youths, for youths.
 
-### Our Mission
+## Our Mission
 
-We aim to raise awareness about Singapore's biodiversity, while carrying out conservation through making changes in our national biodiversity policies.
+- We aim to raise awareness about Singapore's biodiversity, while carrying out conservation through making changes in our national biodiversity policies.
+- We analyse policies that involve or affect biodiversity, like land-use planning, and seek to **balance** development with conservation.
+- The ideal world is one where we don't need to exist, because efficient development is carried out with conservation of sensitive biodiversity already in mind. 
 
 # Meet Our Core Team
 
@@ -63,9 +65,22 @@ We aim to raise awareness about Singapore's biodiversity, while carrying out con
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+@media (prefers-color-scheme: dark) {
+  .person-card {
+    border-color: #444;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  }
+}
+
 .person-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+@media (prefers-color-scheme: dark) {
+  .person-card:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.7);
+  }
 }
 
 .person-cover {
@@ -73,6 +88,12 @@ We aim to raise awareness about Singapore's biodiversity, while carrying out con
   height: 200px;
   overflow: hidden;
   background-color: #f0f0f0;
+}
+
+@media (prefers-color-scheme: dark) {
+  .person-cover {
+    background-color: #2a2a2a;
+  }
 }
 
 .person-cover img {
@@ -100,9 +121,15 @@ We aim to raise awareness about Singapore's biodiversity, while carrying out con
   font-size: 0.95rem;
 }
 
+@media (prefers-color-scheme: dark) {
+  .person-role {
+    color: #aaa;
+  }
+}
+
 .person-bio {
   margin: 0;
-  color: #555;
+  color: #000;
   line-height: 1.6;
   font-size: 0.95rem;
   display: -webkit-box;
@@ -110,5 +137,11 @@ We aim to raise awareness about Singapore's biodiversity, while carrying out con
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+@media (prefers-color-scheme: dark) {
+  .person-bio {
+    color: #e0e0e0;
+  }
 }
 </style>
