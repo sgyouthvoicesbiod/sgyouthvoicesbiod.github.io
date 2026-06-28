@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About Us
+permalink: /about/
 ---
 
 ![GroupPhotoSYVB](https://live.staticflickr.com/65535/55111940598_7d651d9422_c.jpg)
