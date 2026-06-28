@@ -1,0 +1,124 @@
+---
+layout: default
+title: Policy Briefs
+pagination:
+  enabled: false
+---
+
+{% assign sorted_policies = site.policy | sort: "date" | reverse %}
+
+<div class="policy-cards">
+  {% for post in sorted_policies %}
+  <a href="{{ post.url }}" style="text-decoration: none; color: inherit;">
+    <div class="policy-card">
+      {% if post.image %}
+      <div class="policy-card-image">
+        <img src="{{ post.image }}" alt="{{ post.title }}" loading="lazy">
+      </div>
+      {% endif %}
+      
+      <div class="policy-card-content">
+        <h2 class="policy-card-title">{{ post.title }}</h2>
+        <p class="policy-card-date">{{ post.date | date_to_string }}</p>
+        
+        {% if post.content %}
+        <p class="policy-card-excerpt">
+          {{ post.content | strip_html | truncatewords: 100 }}
+        </p>
+        {% endif %}
+      </div>
+    </div>
+  </a>
+  {% endfor %}
+</div>
+
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="/policy/page/{{ paginator.next_page }}/">Older</a>
+  {% else %}
+    <span class="pagination-item older">Older</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+      <a class="pagination-item newer" href="/policy/">Newer</a>
+    {% else %}
+      <a class="pagination-item newer" href="/policy/page/{{ paginator.previous_page }}/">Newer</a>
+    {% endif %}
+  {% else %}
+    <span class="pagination-item newer">Newer</span>
+  {% endif %}
+</div>
+
+<style>
+.policy-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 100%;
+  margin: 2rem 0;
+}
+
+.policy-card {
+  display: grid;
+  gap: 2rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: white;
+}
+
+.policy-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  .policy-card {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+.policy-card-image {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  background-color: #f0f0f0;
+}
+
+.policy-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.policy-card-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.policy-card-title {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.policy-card-date {
+  margin: 0 0 1rem 0;
+  color: #999;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.policy-card-excerpt {
+  margin: 0;
+  color: #555;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+</style>

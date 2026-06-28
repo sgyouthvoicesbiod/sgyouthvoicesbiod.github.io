@@ -1,0 +1,123 @@
+---
+layout: default
+title: Blog
+pagination:
+  enabled: false
+---
+
+<div class="blog-cards">
+  {% for post in site.posts %}
+  <a href="{{ post.url }}" style="text-decoration: none; color: inherit;">
+    <div class="blog-card">
+      {% if post.image %}
+      <div class="blog-card-image">
+        <img src="{{ post.image }}" alt="{{ post.title }}" loading="lazy">
+      </div>
+      {% endif %}
+      
+      <div class="blog-card-content">
+        <h2 class="blog-card-title">{{ post.title }}</h2>
+        <p class="blog-card-date">{{ post.date | date_to_string }}</p>
+        
+        {% if post.content %}
+        <p class="blog-card-excerpt">
+          {{ post.content | strip_html | truncatewords: 50 }}
+        </p>
+        {% endif %}
+      </div>
+    </div>
+  </a>
+  {% endfor %}
+</div>
+
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="/blog/page/{{ paginator.next_page }}/">Older</a>
+  {% else %}
+    <span class="pagination-item older">Older</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+      <a class="pagination-item newer" href="/blog/">Newer</a>
+    {% else %}
+      <a class="pagination-item newer" href="/blog/page/{{ paginator.previous_page }}/">Newer</a>
+    {% endif %}
+  {% else %}
+    <span class="pagination-item newer">Newer</span>
+  {% endif %}
+</div>
+
+<style>
+.blog-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 100%;
+  margin: 2rem 0;
+}
+
+.blog-card {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: white;
+}
+
+.blog-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  .blog-card {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+.blog-card-image {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  background-color: #f0f0f0;
+}
+
+.blog-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blog-card-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.blog-card-title {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.blog-card-date {
+  margin: 0 0 1rem 0;
+  color: #999;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.blog-card-excerpt {
+  margin: 0;
+  color: #555;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+</style>

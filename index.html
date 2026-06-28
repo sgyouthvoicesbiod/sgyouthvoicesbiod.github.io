@@ -1,43 +1,165 @@
 ---
-layout: default
 title: Home
+layout: null
 ---
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ site.title }} - {{ site.tagline }}</title>
+  <meta name="description" content="{{ site.description }}">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+    html, body {
+      height: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background-color: #f5f5f5;
+    }
 
-    {{ post.content| truncatewords: 50 }}
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .homepage-hero {
+      background: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('https://live.staticflickr.com/65535/55360349216_7cbbbe2b59_b.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero-content h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      font-weight: 700;
+    }
+
+    @media (max-width: 768px) {
+      .hero-content h1 {
+        font-size: 2rem;
+      }
+    }
+
+    .hero-content p {
+      font-size: 1.25rem;
+      opacity: 0.95;
+      margin-bottom: 3rem;
+    }
+
+    .cards-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      max-width: 1000px;
+      width: 100%;
+      padding: 0 2rem;
+    }
+
+    @media (min-width: 769px) {
+      .cards-container {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .card {
+      background: white;
+      border-radius: 8px;
+      padding: 2rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+      text-align: center;
+      text-decoration: none;
+      color: inherit;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+      background: #fafafa;
+    }
+
+    .card h2 {
+      font-size: 1.5rem;
+      color: rgb(40, 73, 77);
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+
+    .card p {
+      color: #666;
+      line-height: 1.6;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      background: #2c2c2c;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #4b9ec6;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="homepage-hero">
+    <div class="hero-content">
+      <h1>{{ site.title }}</h1>
+      <p>{{ site.tagline }}</p>
+      
+      <div class="cards-container">
+        <a href="/blog/" class="card">
+          <h2>Our Blog</h2>
+          <p>Read our latest articles, research, and updates on what we're doing!</p>
+        </a>
+
+        <a href="/policy/" class="card">
+          <h2>Policy Briefs</h2>
+          <p>Explore our policy recommendations!</p>
+        </a>
+
+        <a href="/about/" class="card">
+          <h2>About Us</h2>
+          <p>Learn more about our mission and our team members.</p>
+        </a>
+      </div>
+    </div>
   </div>
-  {% endfor %}
-</div>
 
-{% comment %}
-Pagination for the 
-[ Older | Newer ]
-buttons at bottom of page.
-{% endcomment %}
-
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="page{{paginator.next_page}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.url }}">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="page{{paginator.previous_page}}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div>
+  <footer>
+    <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}. All rights reserved.</p>
+    <p>
+      <a href="{{ site.github.repo }}">GitHub</a> | 
+      <a href="mailto:{{ site.author.email }}">Contact</a>
+    </p>
+  </footer>
+</body>
+</html>

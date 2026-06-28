@@ -5,7 +5,6 @@ description:      'Run by youths, for youths.'
 url:              http://sgyouthvoicesbiod.github.io
 baseurl:          ""
 
-
 # Theme Settings
 # Background
 cover_image:      https://live.staticflickr.com/65535/55360430599_05109e1fec_b.jpg
@@ -13,7 +12,7 @@ cover_bg_color:   rgb(40, 73, 77)
 cover_color:      rgb(255, 255, 255)
 
 # 'theme' is for local gems. 'remote_theme' is for GitHub-hosted themes.
-remote_theme:     " vszhub/not-pure-poole" # <-- CHANGE THIS to the theme you want
+remote_theme:     " vszhub/not-pure-poole"
 
 # Plugins
 plugins:
@@ -31,6 +30,9 @@ collections:
   people:
     output: true
     permalink: /people/:name/
+  policy:
+    output: true
+    permalink: /policy/:name/
 
 # Dependencies
 markdown:         kramdown

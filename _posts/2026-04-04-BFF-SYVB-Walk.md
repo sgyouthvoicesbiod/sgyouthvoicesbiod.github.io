@@ -2,6 +2,7 @@
 layout: post
 title: Our Guided Walk for the Biodiversity Friends' Forum 2026
 categories: Guided Walks
+image: https://live.staticflickr.com/65535/55187500132_fefe23d15b_b.jpg
 ---
 
 <a data-flickr-embed="true" href="https://www.flickr.com/photos/204258437@N02/55187500132/in/dateposted-public/" title="BFF26_CCNR_GroupPic"><img src="https://live.staticflickr.com/65535/55187500132_fefe23d15b.jpg" width="500" height="375" alt="BFF26_CCNR_GroupPic"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>

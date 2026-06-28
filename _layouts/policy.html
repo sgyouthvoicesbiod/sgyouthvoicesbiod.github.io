@@ -1,0 +1,198 @@
+---
+layout: default
+---
+
+<div class="policy-layout">
+  <div class="policy-header">
+    <h1 class="policy-title">{{ page.title }}</h1>
+    
+    {% if page.date %}
+    <p class="policy-date">{{ page.date | date_to_string }}</p>
+    {% endif %}
+    
+    {% if page.category %}
+    <p class="policy-category">{{ page.category }}</p>
+    {% endif %}
+  </div>
+
+  <div class="policy-content">
+    {{ content }}
+  </div>
+</div>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&family=Helvetica+Neue:wght@300&display=swap');
+
+.policy-layout {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.policy-header {
+  margin-bottom: 3rem;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 2rem;
+}
+
+.policy-title {
+  font-family: 'Lexend', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+  color: #333;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .policy-title {
+    font-size: 1.8rem;
+  }
+}
+
+.policy-date {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 1.4rem;
+  color: #000000;
+  margin: 0 0 0.5rem 0;
+  font-style: italic;
+}
+
+.policy-category {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: #4b9ec6;
+  margin: 0;
+  font-weight: 600;
+}
+
+.policy-content {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #333;
+}
+
+.policy-content h1,
+.policy-content h2,
+.policy-content h3,
+.policy-content h4,
+.policy-content h5,
+.policy-content h6 {
+  font-family: 'Lexend', sans-serif;
+  text-align: left;
+  color: #2c2c2c;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.policy-content h1 {
+  font-size: 2rem;
+}
+
+.policy-content h2 {
+  font-size: 1.75rem;
+}
+
+.policy-content h3 {
+  font-size: 1.5rem;
+}
+
+.policy-content h4 {
+  font-size: 1.25rem;
+}
+
+.policy-content h5 {
+  font-size: 1.1rem;
+}
+
+.policy-content h6 {
+  font-size: 1rem;
+}
+
+.policy-content p {
+  text-align: justify;
+  margin-bottom: 1.5rem;
+  hyphens: none;
+  word-break: normal;
+  overflow-wrap: normal;
+}
+
+.policy-content ul,
+.policy-content ol {
+  margin-bottom: 1.5rem;
+  padding-left: 2rem;
+}
+
+.policy-content li {
+  margin-bottom: 0.75rem;
+  text-align: justify;
+}
+
+.policy-content blockquote {
+  border-left: 4px solid #4b9ec6;
+  padding-left: 1.5rem;
+  margin-left: 0;
+  margin-bottom: 1.5rem;
+  color: #666;
+  font-style: italic;
+}
+
+.policy-content a {
+  color: #4b9ec6;
+  text-decoration: none;
+}
+
+.policy-content a:hover {
+  text-decoration: underline;
+}
+
+.policy-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+}
+
+.policy-content table th,
+.policy-content table td {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  text-align: left;
+}
+
+.policy-content table th {
+  background-color: #f5f5f5;
+  font-weight: 600;
+  font-family: 'Lexend', sans-serif;
+}
+
+.policy-content hr {
+  border: none;
+  border-top: 2px solid #e0e0e0;
+  margin: 2rem 0;
+}
+
+.policy-content code {
+  background-color: #f5f5f5;
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+}
+
+.policy-content pre {
+  background-color: #f5f5f5;
+  padding: 1rem;
+  border-radius: 5px;
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+.policy-content pre code {
+  background-color: transparent;
+  padding: 0;
+}
+</style>

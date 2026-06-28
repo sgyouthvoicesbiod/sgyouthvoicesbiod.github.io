@@ -2,6 +2,7 @@
 layout: post
 title: Our Year-end Gathering
 categories: SYVB
+image: https://live.staticflickr.com/65535/55112095365_1db562f660_b.jpg
 ---
 
 Today, we held our very delayed year-end gathering. It was supposed to be held during Christmas last year, but life happens. We caught up with one another, with some graduated, or "retired" members attending the gathering to share some wisdom to the younger students.
