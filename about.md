@@ -32,7 +32,7 @@ We aim to raise awareness about Singapore's biodiversity, while carrying out con
       
       {% if person.content %}
       <p class="person-bio">
-        {{ person.content | strip_html | truncatewords: 20 }}
+        {{ person.content | strip_html | truncatewords: 30 }}
       </p>
       {% endif %}
     </div>
@@ -103,5 +103,10 @@ We aim to raise awareness about Singapore's biodiversity, while carrying out con
   color: #555;
   line-height: 1.6;
   font-size: 0.95rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 </style>

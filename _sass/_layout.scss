@@ -29,7 +29,8 @@
 .sidebar-left {
   display: flex;
   padding: var(--spacer);
-  background: center / cover;
+  background:
+  linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)), center / cover;
   height: 100vh;
 }
 

@@ -10,7 +10,7 @@ layout: null
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ site.title }} - {{ site.tagline }}</title>
   <meta name="description" content="{{ site.description }}">
-  
+
   <style>
     * {
       margin: 0;
@@ -32,13 +32,13 @@ layout: null
 
     .homepage-hero {
       background: 
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.0)),
         url('https://live.staticflickr.com/65535/55360349216_7cbbbe2b59_b.jpg');
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
       color: white;
-      padding: 4rem 2rem;
+      padding: 2rem 1rem;
       text-align: center;
       flex: 1;
       display: flex;
@@ -47,49 +47,103 @@ layout: null
       align-items: center;
     }
 
+    @media (min-width: 640px) {
+      .homepage-hero {
+        padding: 3rem 2rem;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .homepage-hero {
+        padding: 4rem 2rem;
+      }
+    }
+
     .hero-content h1 {
-      font-size: 2.5rem;
+      font-size: 1.75rem;
       margin-bottom: 0.5rem;
       font-weight: 700;
     }
 
-    @media (max-width: 768px) {
+    @media (min-width: 640px) {
       .hero-content h1 {
-        font-size: 2rem;
+        font-size: 2.25rem;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .hero-content h1 {
+        font-size: 2.5rem;
       }
     }
 
     .hero-content p {
-      font-size: 1.25rem;
+      font-size: 1rem;
       opacity: 0.95;
-      margin-bottom: 3rem;
+      margin-bottom: 2rem;
+    }
+
+    @media (min-width: 640px) {
+      .hero-content p {
+        font-size: 1.15rem;
+        margin-bottom: 2.5rem;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .hero-content p {
+        font-size: 1.25rem;
+        margin-bottom: 3rem;
+      }
     }
 
     .cards-container {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
       max-width: 1000px;
       width: 100%;
-      padding: 0 2rem;
+      padding: 0 1rem;
     }
 
-    @media (min-width: 769px) {
+    @media (min-width: 640px) {
+      .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.75rem;
+        padding: 0 1.5rem;
+      }
+    }
+
+    @media (min-width: 1024px) {
       .cards-container {
         grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        padding: 0 2rem;
       }
     }
 
     .card {
       background: white;
       border-radius: 8px;
-      padding: 2rem;
+      padding: 1.5rem;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
       transition: all 0.3s ease;
       text-align: center;
       text-decoration: none;
       color: inherit;
       cursor: pointer;
+    }
+
+    @media (min-width: 640px) {
+      .card {
+        padding: 1.75rem;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .card {
+        padding: 2rem;
+      }
     }
 
     .card:hover {
@@ -99,24 +153,43 @@ layout: null
     }
 
     .card h2 {
-      font-size: 1.5rem;
+      font-size: 1.25rem;
       color: rgb(40, 73, 77);
       margin-bottom: 1rem;
       font-weight: 600;
     }
 
+    @media (min-width: 1024px) {
+      .card h2 {
+        font-size: 1.5rem;
+      }
+    }
+
     .card p {
       color: #666;
       line-height: 1.6;
-      font-size: 0.95rem;
+      font-size: 0.9rem;
+    }
+
+    @media (min-width: 1024px) {
+      .card p {
+        font-size: 0.95rem;
+      }
     }
 
     footer {
       background: #2c2c2c;
       color: white;
       text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
+      padding: 1.5rem 1rem;
+      font-size: 0.85rem;
+    }
+
+    @media (min-width: 640px) {
+      footer {
+        padding: 2rem;
+        font-size: 0.9rem;
+      }
     }
 
     footer a {
