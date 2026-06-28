@@ -86,6 +86,8 @@ We aim to raise awareness about Singapore's biodiversity, while carrying out con
 }
 
 .person-title {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 700;
   margin: 0 0 0.5rem 0;
   font-size: 1.25rem;
   font-weight: 600;
